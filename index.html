@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .section-card {
+        padding: 7.2rem 0 4.8rem;
+      }
+
+      .container {
+        /* 1140px */
+        max-width: 90rem;
+        /* padding: 0 12rem; */
+        margin: 0 auto;
+      }
+
+      .card {
+        display: grid;
+        /* 2/3 = 66.6% + 1/3 = 33.3% */
+        grid-template-columns: 1fr 1fr;
+        /* background-color: #e67e22; */
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+        border-radius: 7.3px;
+
+        /* background-image: linear-gradient(
+          to right,
+          hsl(244, 38%, 16%),
+          hsl(277, 64%, 61%)
+        ); */
+        overflow: hidden;
+      }
+
+      .card-text-box {
+        padding: 3.8rem 6.4rem 3.25rem 6.4rem;
+        color: #fff;
+        font-size: 15px;
+        align-items: center;
+        background-image: linear-gradient(
+          to right,
+          hsla(244, 38%, 16%, 0.945),
+          hsla(244, 38%, 16%, 0.945)
+        );
+      }
+
+      .card .heading-primary {
+        color: #fff;
+        margin-bottom: 3.2rem;
+        font-family: "inter";
+        font-weight: 700;
+      }
+
+      .card-text {
+        font-size: 1.12rem;
+        line-height: 1.35;
+        margin-bottom: 4rem;
+        font-family: "inter";
+        font-weight: 400;
+        /* text-align: left !important; */
+      }
+
+      .card-img-box {
+        background-image: linear-gradient(
+            to right,
+            hsla(277, 80%, 70%, 0.445),
+            hsla(277, 64%, 61%, 0.507)
+          ),
+          url("images/image-header-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 36rem;
+      }
+
+      .heading-secondary {
+        font-family: "inter";
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      .footer {
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+      }
+
+      .footer-text {
+        font-family: "inter";
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 0.625rem;
+      }
+
+      /* .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      } */
+    </style>
+  </head>
+  <body>
+    <section class="section-card">
+      <div class="container">
+        <div class="card">
+          <div class="card-text-box">
+            <h1 class="heading-primary">
+              Get <span style="color: hsl(277, 64%, 61%)">insights</span> that
+              help your business grow.
+            </h1>
+            <p class="card-text">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+            <div class="footer">
+              <div class="card-footer">
+                <h2 class="heading-secondary">10k+</h2>
+                <p class="footer-text">companies</p>
+              </div>
+              <div class="card-footer">
+                <h2 class="heading-secondary">314</h2>
+                <p class="footer-text">templates</p>
+              </div>
+              <div class="card-footer">
+                <h2 class="heading-secondary">12M+</h2>
+                <p class="footer-text">queries</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-img-box"
+            role="img"
+            aria-label="Womens working in laptops in their office."
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
